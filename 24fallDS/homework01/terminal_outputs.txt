@@ -1,0 +1,728 @@
+cd 24fallDS/
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS (main) $ ls
+'0912 第一次作业.docx'   job1.cpp  '第一次作业 20240912.zip'
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS (main) $ touch 0912FirstAssignmentRequirement.txt
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS (main) $ mkdir homework01
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS (main) $ mv job1.cpp homework01/
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS (main) $ mv 0912* homework01/
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS (main) $ gcc job1.cpp -o job1
+job1.cpp:55:10: warning: missing terminating " character
+   55 |   printf("参数错误！用法：\n1.命令行参数传入：job1 1 2 3 4 5\n
+      |          ^
+job1.cpp:55:10: error: missing terminating " character
+   55 |   printf("参数错误！用法：\n1.命令行参数传入：job1 1 2 3 4 5\n
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+job1.cpp:56:5: error: stray ‘\350’ in program
+   56 |   2.���行时键盘输入：job1\n3.文件读入：job1 input.txt\n");
+      |     ^
+job1.cpp:56:6: error: stray ‘\277’ in program
+   56 |   2.���行时键盘输入：job1\n3.文件读入：job1 input.txt\n");
+      |      ^
+job1.cpp:56:7: error: stray ‘\220’ in program
+   56 |   2.��行时键盘输入：job1\n3.文件读入：job1 input.txt\n");
+      |       ^
+job1.cpp:56:8: error: stray ‘\350’ in program
+   56 |   2.运���时键盘输入：job1\n3.文件读入：job1 input.txt\n");
+      |        ^
+job1.cpp:56:9: error: stray ‘\241’ in program
+   56 |   2.运���时键盘输入：job1\n3.文件读入：job1 input.txt\n");
+      |         ^
+job1.cpp:56:10: error: stray ‘\214’ in program
+   56 |   2.运��时键盘输入：job1\n3.文件读入：job1 input.txt\n");
+      |          ^
+job1.cpp:56:11: error: stray ‘\346’ in program
+   56 |   2.运行���键盘输入：job1\n3.文件读入：job1 input.txt\n");
+      |           ^
+job1.cpp:56:12: error: stray ‘\227’ in program
+   56 |   2.运行���键盘输入：job1\n3.文件读入：job1 input.txt\n");
+      |            ^
+job1.cpp:56:13: error: stray ‘\266’ in program
+   56 |   2.运行��键盘输入：job1\n3.文件读入：job1 input.txt\n");
+      |             ^
+job1.cpp:56:14: error: stray ‘\351’ in program
+   56 |   2.运行时���盘输入：job1\n3.文件读入：job1 input.txt\n");
+      |              ^
+job1.cpp:56:15: error: stray ‘\224’ in program
+   56 |   2.运行时���盘输入：job1\n3.文件读入：job1 input.txt\n");
+      |               ^
+job1.cpp:56:16: error: stray ‘\256’ in program
+   56 |   2.运行时��盘输入：job1\n3.文件读入：job1 input.txt\n");
+      |                ^
+job1.cpp:56:17: error: stray ‘\347’ in program
+   56 |   2.运行时键���输入：job1\n3.文件读入：job1 input.txt\n");
+      |                 ^
+job1.cpp:56:18: error: stray ‘\233’ in program
+   56 |   2.运行时键���输入：job1\n3.文件读入：job1 input.txt\n");
+      |                  ^
+job1.cpp:56:19: error: stray ‘\230’ in program
+   56 |   2.运行时键��输入：job1\n3.文件读入：job1 input.txt\n");
+      |                   ^
+job1.cpp:56:20: error: stray ‘\350’ in program
+   56 |   2.运行时键盘���入：job1\n3.文件读入：job1 input.txt\n");
+      |                    ^
+job1.cpp:56:21: error: stray ‘\276’ in program
+   56 |   2.运行时键盘���入：job1\n3.文件读入：job1 input.txt\n");
+      |                     ^
+job1.cpp:56:22: error: stray ‘\223’ in program
+   56 |   2.运行时键盘��入：job1\n3.文件读入：job1 input.txt\n");
+      |                      ^
+job1.cpp:56:23: error: stray ‘\345’ in program
+   56 |   2.运行时键盘输���：job1\n3.文件读入：job1 input.txt\n");
+      |                       ^
+job1.cpp:56:24: error: stray ‘\205’ in program
+   56 |   2.运行时键盘输���：job1\n3.文件读入：job1 input.txt\n");
+      |                        ^
+job1.cpp:56:25: error: stray ‘\245’ in program
+   56 |   2.运行时键盘输��：job1\n3.文件读入：job1 input.txt\n");
+      |                         ^
+job1.cpp:56:26: error: stray ‘\357’ in program
+   56 |   2.运行时键盘输入���job1\n3.文件读入：job1 input.txt\n");
+      |                          ^
+job1.cpp:56:27: error: stray ‘\274’ in program
+   56 |   2.运行时键盘输入���job1\n3.文件读入：job1 input.txt\n");
+      |                           ^
+job1.cpp:56:28: error: stray ‘\232’ in program
+   56 |   2.运行时键盘输入��job1\n3.文件读入：job1 input.txt\n");
+      |                            ^
+job1.cpp:56:33: error: stray ‘\’ in program
+   56 |   2.运行时键盘输入：job1\n3.文件读入：job1 input.txt\n");
+      |                                 ^
+job1.cpp:56:37: error: stray ‘\346’ in program
+   56 |   2.运行时键盘输入：job1\n3.���件读入：job1 input.txt\n");
+      |                                     ^
+job1.cpp:56:38: error: stray ‘\226’ in program
+   56 |   2.运行时键盘输入：job1\n3.���件读入：job1 input.txt\n");
+      |                                      ^
+job1.cpp:56:39: error: stray ‘\207’ in program
+   56 |   2.运行时键盘输入：job1\n3.��件读入：job1 input.txt\n");
+      |                                       ^
+job1.cpp:56:40: error: stray ‘\344’ in program
+   56 |   2.运行时键盘输入：job1\n3.文���读入：job1 input.txt\n");
+      |                                        ^
+job1.cpp:56:41: error: stray ‘\273’ in program
+   56 |   2.运行时键盘输入：job1\n3.文���读入：job1 input.txt\n");
+      |                                         ^
+job1.cpp:56:42: error: stray ‘\266’ in program
+   56 |   2.运行时键盘输入：job1\n3.文��读入：job1 input.txt\n");
+      |                                          ^
+job1.cpp:56:43: error: stray ‘\350’ in program
+   56 |   2.运行时键盘输入：job1\n3.文件���入：job1 input.txt\n");
+      |                                           ^
+job1.cpp:56:44: error: stray ‘\257’ in program
+   56 |   2.运行时键盘输入：job1\n3.文件���入：job1 input.txt\n");
+      |                                            ^
+job1.cpp:56:45: error: stray ‘\273’ in program
+   56 |   2.运行时键盘输入：job1\n3.文件��入：job1 input.txt\n");
+      |                                             ^
+job1.cpp:56:46: error: stray ‘\345’ in program
+   56 |   2.运行时键盘输入：job1\n3.文件读���：job1 input.txt\n");
+      |                                              ^
+job1.cpp:56:47: error: stray ‘\205’ in program
+   56 |   2.运行时键盘输入：job1\n3.文件读���：job1 input.txt\n");
+      |                                               ^
+job1.cpp:56:48: error: stray ‘\245’ in program
+   56 |   2.运行时键盘输入：job1\n3.文件读��：job1 input.txt\n");
+      |                                                ^
+job1.cpp:56:49: error: stray ‘\357’ in program
+   56 |   2.运行时键盘输入：job1\n3.文件读入���job1 input.txt\n");
+      |                                                 ^
+job1.cpp:56:50: error: stray ‘\274’ in program
+   56 |   2.运行时键盘输入：job1\n3.文件读入���job1 input.txt\n");
+      |                                                  ^
+job1.cpp:56:51: error: stray ‘\232’ in program
+   56 |   2.运行时键盘输入：job1\n3.文件读入��job1 input.txt\n");
+      |                                                   ^
+job1.cpp:56:66: error: stray ‘\’ in program
+   56 |   2.运行时键盘输入：job1\n3.文件读入：job1 input.txt\n");
+      |                                                                  ^
+job1.cpp:56:68: warning: missing terminating " character
+   56 |   2.运行时键盘输入：job1\n3.文件读入：job1 input.txt\n");
+      |                                                                    ^
+job1.cpp:56:68: error: missing terminating " character
+   56 |   2.运行时键盘输入：job1\n3.文件读入：job1 input.txt\n");
+      |                                                                    ^~~
+job1.cpp:22:5: warning: first argument of ‘int main(char, char**)’ should be ‘int’ [-Wmain]
+   22 | int main(char argc, char* argv[])
+      |     ^~~~
+job1.cpp: In function ‘int main(char, char**)’:
+job1.cpp:56:5: error: expected ‘)’ before ‘job1’
+   56 |   2.���行时键盘输入：job1\n3.文件读入：job1 input.txt\n");
+      |     ^                       ~~~~
+      |     )
+job1.cpp:55:9: note: to match this ‘(’
+   55 |   printf("参数错误！用法：\n1.命令行参数传入：job1 1 2 3 4 5\n
+      |         ^
+job1.cpp:60:42: error: too few arguments to function ‘bool ThreeIntSort(int*, int*, int*)’
+   60 |  if( ThreeIntSort( /*补充实现代码*/))
+      |                                          ^
+job1.cpp:10:6: note: declared here
+   10 | bool ThreeIntSort(int* x1, int* x2, int* x3);
+      |      ^~~~~~~~~~~~
+job1.cpp:63:40: error: too few arguments to function ‘bool FourIntSort(int*, int*, int*, int*)’
+   63 |  if( FourIntSort(/*补充实现代码*/))
+      |                                        ^
+job1.cpp:15:6: note: declared here
+   15 | bool FourIntSort(int* x1, int* x2, int* x3, int* x4);
+      |      ^~~~~~~~~~~
+job1.cpp:66:40: error: too few arguments to function ‘bool FiveIntSort(int*, int*, int*, int*, int*)’
+   66 |  if( FiveIntSort(/*补充实现代码*/))
+      |                                        ^
+job1.cpp:20:6: note: declared here
+   20 | bool FiveIntSort(int* x1, int* x2, int* x3, int* x4, int* x5);
+      |      ^~~~~~~~~~~
+job1.cpp: In function ‘bool ThreeIntSort(int*, int*, int*)’:
+job1.cpp:75:1: warning: no return statement in function returning non-void [-Wreturn-type]
+   75 | }
+      | ^
+job1.cpp: In function ‘bool FourIntSort(int*, int*, int*, int*)’:
+job1.cpp:79:1: warning: no return statement in function returning non-void [-Wreturn-type]
+   79 | }
+      | ^
+job1.cpp: In function ‘bool FiveIntSort(int*, int*, int*, int*, int*)’:
+job1.cpp:83:1: warning: no return statement in function returning non-void [-Wreturn-type]
+   83 | }
+      | ^
+job1.cpp: In function ‘bool SwapInt(int*, int*)’:
+job1.cpp:88:1: warning: no return statement in function returning non-void [-Wreturn-type]
+   88 | }
+      | ^
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS (main) $ ls
+homework01
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS (main) $ cd homework01/
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ gcc job1.cpp -o job1
+job1.cpp:55:10: warning: missing terminating " character
+   55 |   printf("参数错误！用法：\n1.命令行参数传入：job1 1 2 3 4 5\n
+      |          ^
+job1.cpp:55:10: error: missing terminating " character
+   55 |   printf("参数错误！用法：\n1.命令行参数传入：job1 1 2 3 4 5\n
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+job1.cpp:56:5: error: stray ‘\350’ in program
+   56 |   2.���行时键盘输入：job1\n3.文件读入：job1 input.txt\n");
+      |     ^
+job1.cpp:56:6: error: stray ‘\277’ in program
+   56 |   2.���行时键盘输入：job1\n3.文件读入：job1 input.txt\n");
+      |      ^
+job1.cpp:56:7: error: stray ‘\220’ in program
+   56 |   2.��行时键盘输入：job1\n3.文件读入：job1 input.txt\n");
+      |       ^
+job1.cpp:56:8: error: stray ‘\350’ in program
+   56 |   2.运���时键盘输入：job1\n3.文件读入：job1 input.txt\n");
+      |        ^
+job1.cpp:56:9: error: stray ‘\241’ in program
+   56 |   2.运���时键盘输入：job1\n3.文件读入：job1 input.txt\n");
+      |         ^
+job1.cpp:56:10: error: stray ‘\214’ in program
+   56 |   2.运��时键盘输入：job1\n3.文件读入：job1 input.txt\n");
+      |          ^
+job1.cpp:56:11: error: stray ‘\346’ in program
+   56 |   2.运行���键盘输入：job1\n3.文件读入：job1 input.txt\n");
+      |           ^
+job1.cpp:56:12: error: stray ‘\227’ in program
+   56 |   2.运行���键盘输入：job1\n3.文件读入：job1 input.txt\n");
+      |            ^
+job1.cpp:56:13: error: stray ‘\266’ in program
+   56 |   2.运行��键盘输入：job1\n3.文件读入：job1 input.txt\n");
+      |             ^
+job1.cpp:56:14: error: stray ‘\351’ in program
+   56 |   2.运行时���盘输入：job1\n3.文件读入：job1 input.txt\n");
+      |              ^
+job1.cpp:56:15: error: stray ‘\224’ in program
+   56 |   2.运行时���盘输入：job1\n3.文件读入：job1 input.txt\n");
+      |               ^
+job1.cpp:56:16: error: stray ‘\256’ in program
+   56 |   2.运行时��盘输入：job1\n3.文件读入：job1 input.txt\n");
+      |                ^
+job1.cpp:56:17: error: stray ‘\347’ in program
+   56 |   2.运行时键���输入：job1\n3.文件读入：job1 input.txt\n");
+      |                 ^
+job1.cpp:56:18: error: stray ‘\233’ in program
+   56 |   2.运行时键���输入：job1\n3.文件读入：job1 input.txt\n");
+      |                  ^
+job1.cpp:56:19: error: stray ‘\230’ in program
+   56 |   2.运行时键��输入：job1\n3.文件读入：job1 input.txt\n");
+      |                   ^
+job1.cpp:56:20: error: stray ‘\350’ in program
+   56 |   2.运行时键盘���入：job1\n3.文件读入：job1 input.txt\n");
+      |                    ^
+job1.cpp:56:21: error: stray ‘\276’ in program
+   56 |   2.运行时键盘���入：job1\n3.文件读入：job1 input.txt\n");
+      |                     ^
+job1.cpp:56:22: error: stray ‘\223’ in program
+   56 |   2.运行时键盘��入：job1\n3.文件读入：job1 input.txt\n");
+      |                      ^
+job1.cpp:56:23: error: stray ‘\345’ in program
+   56 |   2.运行时键盘输���：job1\n3.文件读入：job1 input.txt\n");
+      |                       ^
+job1.cpp:56:24: error: stray ‘\205’ in program
+   56 |   2.运行时键盘输���：job1\n3.文件读入：job1 input.txt\n");
+      |                        ^
+job1.cpp:56:25: error: stray ‘\245’ in program
+   56 |   2.运行时键盘输��：job1\n3.文件读入：job1 input.txt\n");
+      |                         ^
+job1.cpp:56:26: error: stray ‘\357’ in program
+   56 |   2.运行时键盘输入���job1\n3.文件读入：job1 input.txt\n");
+      |                          ^
+job1.cpp:56:27: error: stray ‘\274’ in program
+   56 |   2.运行时键盘输入���job1\n3.文件读入：job1 input.txt\n");
+      |                           ^
+job1.cpp:56:28: error: stray ‘\232’ in program
+   56 |   2.运行时键盘输入��job1\n3.文件读入：job1 input.txt\n");
+      |                            ^
+job1.cpp:56:33: error: stray ‘\’ in program
+   56 |   2.运行时键盘输入：job1\n3.文件读入：job1 input.txt\n");
+      |                                 ^
+job1.cpp:56:37: error: stray ‘\346’ in program
+   56 |   2.运行时键盘输入：job1\n3.���件读入：job1 input.txt\n");
+      |                                     ^
+job1.cpp:56:38: error: stray ‘\226’ in program
+   56 |   2.运行时键盘输入：job1\n3.���件读入：job1 input.txt\n");
+      |                                      ^
+job1.cpp:56:39: error: stray ‘\207’ in program
+   56 |   2.运行时键盘输入：job1\n3.��件读入：job1 input.txt\n");
+      |                                       ^
+job1.cpp:56:40: error: stray ‘\344’ in program
+   56 |   2.运行时键盘输入：job1\n3.文���读入：job1 input.txt\n");
+      |                                        ^
+job1.cpp:56:41: error: stray ‘\273’ in program
+   56 |   2.运行时键盘输入：job1\n3.文���读入：job1 input.txt\n");
+      |                                         ^
+job1.cpp:56:42: error: stray ‘\266’ in program
+   56 |   2.运行时键盘输入：job1\n3.文��读入：job1 input.txt\n");
+      |                                          ^
+job1.cpp:56:43: error: stray ‘\350’ in program
+   56 |   2.运行时键盘输入：job1\n3.文件���入：job1 input.txt\n");
+      |                                           ^
+job1.cpp:56:44: error: stray ‘\257’ in program
+   56 |   2.运行时键盘输入：job1\n3.文件���入：job1 input.txt\n");
+      |                                            ^
+job1.cpp:56:45: error: stray ‘\273’ in program
+   56 |   2.运行时键盘输入：job1\n3.文件��入：job1 input.txt\n");
+      |                                             ^
+job1.cpp:56:46: error: stray ‘\345’ in program
+   56 |   2.运行时键盘输入：job1\n3.文件读���：job1 input.txt\n");
+      |                                              ^
+job1.cpp:56:47: error: stray ‘\205’ in program
+   56 |   2.运行时键盘输入：job1\n3.文件读���：job1 input.txt\n");
+      |                                               ^
+job1.cpp:56:48: error: stray ‘\245’ in program
+   56 |   2.运行时键盘输入：job1\n3.文件读��：job1 input.txt\n");
+      |                                                ^
+job1.cpp:56:49: error: stray ‘\357’ in program
+   56 |   2.运行时键盘输入：job1\n3.文件读入���job1 input.txt\n");
+      |                                                 ^
+job1.cpp:56:50: error: stray ‘\274’ in program
+   56 |   2.运行时键盘输入：job1\n3.文件读入���job1 input.txt\n");
+      |                                                  ^
+job1.cpp:56:51: error: stray ‘\232’ in program
+   56 |   2.运行时键盘输入：job1\n3.文件读入��job1 input.txt\n");
+      |                                                   ^
+job1.cpp:56:66: error: stray ‘\’ in program
+   56 |   2.运行时键盘输入：job1\n3.文件读入：job1 input.txt\n");
+      |                                                                  ^
+job1.cpp:56:68: warning: missing terminating " character
+   56 |   2.运行时键盘输入：job1\n3.文件读入：job1 input.txt\n");
+      |                                                                    ^
+job1.cpp:56:68: error: missing terminating " character
+   56 |   2.运行时键盘输入：job1\n3.文件读入：job1 input.txt\n");
+      |                                                                    ^~~
+job1.cpp:22:5: warning: first argument of ‘int main(char, char**)’ should be ‘int’ [-Wmain]
+   22 | int main(char argc, char* argv[])
+      |     ^~~~
+job1.cpp: In function ‘int main(char, char**)’:
+job1.cpp:56:5: error: expected ‘)’ before ‘job1’
+   56 |   2.���行时键盘输入：job1\n3.文件读入：job1 input.txt\n");
+      |     ^                       ~~~~
+      |     )
+job1.cpp:55:9: note: to match this ‘(’
+   55 |   printf("参数错误！用法：\n1.命令行参数传入：job1 1 2 3 4 5\n
+      |         ^
+job1.cpp:60:42: error: too few arguments to function ‘bool ThreeIntSort(int*, int*, int*)’
+   60 |  if( ThreeIntSort( /*补充实现代码*/))
+      |                                          ^
+job1.cpp:10:6: note: declared here
+   10 | bool ThreeIntSort(int* x1, int* x2, int* x3);
+      |      ^~~~~~~~~~~~
+job1.cpp:63:40: error: too few arguments to function ‘bool FourIntSort(int*, int*, int*, int*)’
+   63 |  if( FourIntSort(/*补充实现代码*/))
+      |                                        ^
+job1.cpp:15:6: note: declared here
+   15 | bool FourIntSort(int* x1, int* x2, int* x3, int* x4);
+      |      ^~~~~~~~~~~
+job1.cpp:66:40: error: too few arguments to function ‘bool FiveIntSort(int*, int*, int*, int*, int*)’
+   66 |  if( FiveIntSort(/*补充实现代码*/))
+      |                                        ^
+job1.cpp:20:6: note: declared here
+   20 | bool FiveIntSort(int* x1, int* x2, int* x3, int* x4, int* x5);
+      |      ^~~~~~~~~~~
+job1.cpp: In function ‘bool ThreeIntSort(int*, int*, int*)’:
+job1.cpp:75:1: warning: no return statement in function returning non-void [-Wreturn-type]
+   75 | }
+      | ^
+job1.cpp: In function ‘bool FourIntSort(int*, int*, int*, int*)’:
+job1.cpp:79:1: warning: no return statement in function returning non-void [-Wreturn-type]
+   79 | }
+      | ^
+job1.cpp: In function ‘bool FiveIntSort(int*, int*, int*, int*, int*)’:
+job1.cpp:83:1: warning: no return statement in function returning non-void [-Wreturn-type]
+   83 | }
+      | ^
+job1.cpp: In function ‘bool SwapInt(int*, int*)’:
+job1.cpp:88:1: warning: no return statement in function returning non-void [-Wreturn-type]
+   88 | }
+      | ^
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ gcc job1.cpp -o job1
+job1.cpp:22:5: warning: first argument of ‘int main(char, char**)’ should be ‘int’ [-Wmain]
+   22 | int main(char argc, char* argv[])
+      |     ^~~~
+job1.cpp: In function ‘bool ThreeIntSort(int*, int*, int*)’:
+job1.cpp:68:1: warning: no return statement in function returning non-void [-Wreturn-type]
+   68 | }
+      | ^
+job1.cpp: In function ‘bool FourIntSort(int*, int*, int*, int*)’:
+job1.cpp:72:1: warning: no return statement in function returning non-void [-Wreturn-type]
+   72 | }
+      | ^
+job1.cpp: In function ‘bool FiveIntSort(int*, int*, int*, int*, int*)’:
+job1.cpp:76:1: warning: no return statement in function returning non-void [-Wreturn-type]
+   76 | }
+      | ^
+job1.cpp: In function ‘bool SwapInt(int*, int*)’:
+job1.cpp:81:1: warning: no return statement in function returning non-void [-Wreturn-type]
+   81 | }
+      | ^
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ ./job
+bash: ./job: No such file or directory
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ ./job1
+请输入5个整数：1 7 6 8 9
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ gcc job1.cpp -o job1
+job1.cpp:22:5: warning: first argument of ‘int main(char, char**)’ should be ‘int’ [-Wmain]
+   22 | int main(char argc, char* argv[])
+      |     ^~~~
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ gcc job1.cpp -o job1
+job1.cpp:22:5: warning: first argument of ‘int main(char, char**)’ should be ‘int’ [-Wmain]
+   22 | int main(char argc, char* argv[])
+      |     ^~~~
+job1.cpp: In function ‘int main(char, char**)’:
+job1.cpp:28:14: error: invalid conversion from ‘char’ to ‘const char*’ [-fpermissive]
+   28 |  argc = atoi(argc);
+      |              ^~~~
+      |              |
+      |              char
+In file included from /usr/include/c++/9/cstdlib:75,
+                 from /usr/include/c++/9/stdlib.h:36,
+                 from job1.cpp:1:
+/usr/include/stdlib.h:104:30: note:   initializing argument 1 of ‘int atoi(const char*)’
+  104 | extern int atoi (const char *__nptr)
+      |                  ~~~~~~~~~~~~^~~~~~
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ gcc job1.cpp -o job1
+job1.cpp:22:5: warning: first argument of ‘int main(char, char**)’ should be ‘int’ [-Wmain]
+   22 | int main(char argc, char* argv[])
+      |     ^~~~
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ gcc job1.cpp -o job1
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ ./job1 
+请输入5个整数：6 8 9 1 5
+
+ 前三个整数排序结果：6 8 9
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ ./job1 
+请输入5个整数：8 9 2 0 7
+
+ 前三个整数排序结果：2 8 9
+
+ 前五个整数排序结果：0 2 7 8 9
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ gdb jo
+job1        join        journalctl  
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ gdb job1
+GNU gdb (Ubuntu 9.2-0ubuntu1~20.04.2) 9.2
+Copyright (C) 2020 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+--Type <RET> for more, q to quit, c to continue without paging-- 
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from job1...
+(No debugging symbols found in job1)
+(gdb) b FourIntSort
+Breakpoint 1 at 0x153c
+(gdb) run
+Starting program: /workspaces/learning-docs/24fallDS/homework01/job1 
+请输入5个整数：2 8 7 0 3
+
+ 前三个整数排序结果：2 7 8
+
+Breakpoint 1, 0x000055555555553c in FourIntSort(int*, int*, int*, int*) ()
+(gdb) n
+Single stepping until exit from function _Z11FourIntSortPiS_S_S_,
+which has no line number information.
+0x0000555555555401 in main ()
+(gdb) n
+Single stepping until exit from function main,
+which has no line number information.
+
+Breakpoint 1, 0x000055555555553c in FourIntSort(int*, int*, int*, int*) ()
+(gdb) n
+Single stepping until exit from function _Z11FourIntSortPiS_S_S_,
+which has no line number information.
+0x0000555555555619 in FiveIntSort(int*, int*, int*, int*, int*) ()
+(gdb) b SwapInt
+Breakpoint 2 at 0x55555555569c
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x000055555555553c in FourIntSort(int*, int*, int*, int*) ()
+(gdb) p *x1
+No symbol "x1" in current context.
+(gdb) p x1
+No symbol "x1" in current context.
+(gdb) 
+[1]+  Stopped                 gdb job1
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ cgdb job1
+bash: cgdb: command not found
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ ./job1 
+请输入5个整数：1 5 7 9 0
+
+ 前三个整数排序结果：1 5 7
+
+ 前四个整数排序结果：1 5 7 9
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ gcc job1.cpp -o job1
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ ./job1 
+请输入5个整数：1 7 9 6 7
+
+ 前三个整数排序结果：1 7 9
+
+ 前四个整数排序结果：1 6 7 9
+
+ 前五个整数排序结果：1 6 7 7 9
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ ./job1 
+请输入5个整数：1 6 7 9 0
+
+ 前三个整数排序结果：1 6 7
+
+ 前四个整数排序结果：1 6 7 9
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ gcc test_job1.cpp -o test_job
+test_job1.cpp:114:5: error: conflicting declaration of C function ‘int main()’
+  114 | int main() {
+      |     ^~~~
+In file included from test_job1.cpp:3:
+job1.cpp:22:5: note: previous declaration ‘int main(int, char**)’
+   22 | int main(int argc, char* argv[])
+      |     ^~~~
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ ^C
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ gcc test_job1.cpp -o test_job
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ ./test_job 
+SwapInt 测试通过！
+ThreeIntSort 测试通过！
+test_job: test_job1.cpp:61: void test_FourIntSort(): Assertion `FourIntSort(&a, &b, &c, &d) == true' failed.
+Aborted (core dumped)
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ gcc job1.cpp -o job1
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x24): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ ./job1
+bash: ./job1: No such file or directory
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ gcc job1.cpp -o job1
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ ./job1
+请输入5个整数：^Z
+[2]+  Stopped                 ./job1
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ ./job1 4 3 2 1 0
+
+ 前三个整数排序结果：2 3 4
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ gdb ./job1 4 3 2 1 0
+Excess command line arguments ignored. (3 ...)
+GNU gdb (Ubuntu 9.2-0ubuntu1~20.04.2) 9.2
+Copyright (C) 2020 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+--Type <RET> for more, q to quit, c to continue without paging--
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./job1...
+(No debugging symbols found in ./job1)
+Attaching to program: /workspaces/learning-docs/24fallDS/homework01/job1, process 4
+ptrace: No such process.
+/workspaces/learning-docs/24fallDS/homework01/4: No such file or directory.
+(gdb) b 94
+No symbol table is loaded.  Use the "file" command.
+(gdb) 
+[3]+  Stopped                 gdb ./job1 4 3 2 1 0
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ gcc job1.cpp -o job1 -g
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ gdb job1 4 3 2 1 0
+Excess command line arguments ignored. (3 ...)
+GNU gdb (Ubuntu 9.2-0ubuntu1~20.04.2) 9.2
+Copyright (C) 2020 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+--Type <RET> for more, q to quit, c to continue without paging-- 
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from job1...
+Attaching to program: /workspaces/learning-docs/24fallDS/homework01/job1, process 4
+ptrace: No such process.
+/workspaces/learning-docs/24fallDS/homework01/4: No such file or directory.
+(gdb) b 94
+Breakpoint 1 at 0x15a3: file job1.cpp, line 95.
+(gdb) r
+Starting program: /workspaces/learning-docs/24fallDS/homework01/job1 
+请输入5个整数：4 3 2 1 0
+
+ 前三个整数排序结果：2 3 4
+
+Breakpoint 1, FourIntSort (x1=0x7fffffffd09c, x2=0x7fffffffd0a0, x3=0x7fffffffd0a4, x4=0x7fffffffd0a8) at job1.cpp:95
+95              return *x1 <= *x2 && *x2 <= *x3 && *x3 <= *x4;
+(gdb) print x1
+$1 = (int *) 0x7fffffffd09c
+(gdb) print *x1
+$2 = 2
+(gdb) print *x2
+$3 = 1
+(gdb) print *x3
+$4 = 3
+(gdb) print *x4
+$5 = 4
+(gdb) print *x5
+No symbol "x5" in current context.
+(gdb) 
+[4]+  Stopped                 gdb job1 4 3 2 1 0
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ gcc job1.cpp -o job1
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ ./job1 6 5 7 8 9
+
+ 前三个整数排序结果：5 6 7
+
+ 前四个整数排序结果：5 6 7 8
+
+ 前五个整数排序结果：5 6 7 8 9
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ gcc test_job1.cpp -o test_job
+test_job1.cpp:115:5: error: conflicting declaration of C function ‘int main()’
+  115 | int main() {
+      |     ^~~~
+In file included from test_job1.cpp:4:
+job1.cpp:24:5: note: previous declaration ‘int main(int, char**)’
+   24 | int main(int argc, char* argv[])
+      |     ^~~~
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ gcc test_job1.cpp -o test_job
+test_job1.cpp:115:5: error: conflicting declaration of C function ‘int main()’
+  115 | int main() {
+      |     ^~~~
+In file included from test_job1.cpp:4:
+job1.cpp:23:5: note: previous declaration ‘int main(int, char**)’
+   23 | int main(int argc, char* argv[])
+      |     ^~~~
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ gcc test_job1.cpp -o test_job
+test_job1.cpp:116:5: error: conflicting declaration of C function ‘int main()’
+  116 | int main() {
+      |     ^~~~
+In file included from test_job1.cpp:5:
+job1.cpp:23:5: note: previous declaration ‘int main(int, char**)’
+   23 | int main(int argc, char* argv[])
+      |     ^~~~
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ gcc test_job1.cpp -o test_job
+test_job1.cpp:116:5: error: conflicting declaration of C function ‘int main()’
+  116 | int main() {
+      |     ^~~~
+In file included from test_job1.cpp:5:
+job1.cpp:23:5: note: previous declaration ‘int main(int, char**)’
+   23 | int main(int argc, char* argv[])
+      |     ^~~~
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ g++ -DTESTING -o test_job1 test_job1.cpp
+test_job1.cpp:1: warning: "TESTING" redefined
+    1 | #define TESTING
+      | 
+<command-line>: note: this is the location of the previous definition
+test_job1.cpp:116:5: error: conflicting declaration of C function ‘int main()’
+  116 | int main() {
+      |     ^~~~
+In file included from test_job1.cpp:5:
+job1.cpp:22:5: note: previous declaration ‘int main(int, char**)’
+   22 | int main(int argc, char* argv[])
+      |     ^~~~
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ touch helper.c
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ touch helper.h
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ gcc job1.cpp -o job1
+/usr/bin/ld: /tmp/ccxXQxmL.o: in function `main':
+job1.cpp:(.text+0x19c): undefined reference to `ThreeIntSort(int*, int*, int*)'
+/usr/bin/ld: job1.cpp:(.text+0x1d4): undefined reference to `FourIntSort(int*, int*, int*, int*)'
+/usr/bin/ld: job1.cpp:(.text+0x219): undefined reference to `FiveIntSort(int*, int*, int*, int*, int*)'
+collect2: error: ld returned 1 exit status
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ gcc job1.cpp -o job1
+/usr/bin/ld: /tmp/ccihcBsp.o: in function `main':
+job1.cpp:(.text+0x19c): undefined reference to `ThreeIntSort(int*, int*, int*)'
+/usr/bin/ld: job1.cpp:(.text+0x1d4): undefined reference to `FourIntSort(int*, int*, int*, int*)'
+/usr/bin/ld: job1.cpp:(.text+0x219): undefined reference to `FiveIntSort(int*, int*, int*, int*, int*)'
+collect2: error: ld returned 1 exit status
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ ^C
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ cmake job1
+CMake Error: The source directory "/workspaces/learning-docs/24fallDS/homework01/job1" does not exist.
+Specify --help for usage, or press the help button on the CMake GUI.
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ cmake
+Usage
+
+  cmake [options] <path-to-source>
+  cmake [options] <path-to-existing-build>
+  cmake [options] -S <path-to-source> -B <path-to-build>
+
+Specify a source directory to (re-)generate a build system for it in the
+current working directory.  Specify an existing build directory to
+re-generate its build system.
+
+Run 'cmake --help' for more information.
+
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ gcc job1.cpp helper.c -o job1
+/usr/bin/ld: /tmp/cc37hVkJ.o: in function `main':
+job1.cpp:(.text+0x19c): undefined reference to `ThreeIntSort(int*, int*, int*)'
+/usr/bin/ld: job1.cpp:(.text+0x1d4): undefined reference to `FourIntSort(int*, int*, int*, int*)'
+/usr/bin/ld: job1.cpp:(.text+0x219): undefined reference to `FiveIntSort(int*, int*, int*, int*, int*)'
+collect2: error: ld returned 1 exit status
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ g++ job1.cpp helper.c -o job1
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ ./job1
+请输入5个整数：3 5 2 6 1 
+
+ 前三个整数排序结果：2 3 5
+
+ 前四个整数排序结果：2 3 5 6
+
+ 前五个整数排序结果：1 2 3 5 6
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ g++ test_job1.cpp helper.c -o test
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ ./test
+SwapInt 测试通过！
+ThreeIntSort 测试通过！
+FourIntSort 测试通过！
+FiveIntSort 测试通过！
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ mkdir codes
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ mv hel* codes/
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ mv *job* codes/
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ mv test codes/
+@Kettenkrado ➜ /workspaces/learning-docs/24fallDS/homework01 (main) $ cd codes
+@Kettenkrado ➜ .../learning-docs/24fallDS/homework01/codes (main) $ ls
+helper.c  helper.h  job1  job1.c  test  test_job1.c
+@Kettenkrado ➜ .../learning-docs/24fallDS/homework01/codes (main) $ gcc job1.c helper.c -o job1
+@Kettenkrado ➜ .../learning-docs/24fallDS/homework01/codes (main) $ gcc test_job1.c helper.c -o test
+@Kettenkrado ➜ .../learning-docs/24fallDS/homework01/codes (main) $ 
+
+gcc test_job1.cpp helper.cpp -o test
+gcc job1.cpp helper.cpp -o job1
