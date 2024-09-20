@@ -1,89 +1,45 @@
-1.写完开始在终端做一些简单的测试的时候，发现有时排序前四个不输出，有时排序前五个不输出，但排序前三个一直保持输出没什么问题
-pics1、2
-为此，写了一些简单的测试，对每个函数都列举了一些简单的不同情况
-if(*x1 > *x2) 原来是因为原来写成了地址比较
-if(x1 > x2)
+1.首先为了测试，编写了另外一个cpp文件（test_job1.cpp），但是在编译运行的时候报错
+error: conflicting declaration of C function ‘int main()’
+previous declaration ‘int main(int, char**)’
+于是为了避免重复定义main函数并且便于测试，将所有会用到的函数封装起来并单独测试（helper.cpp, helper.h）
+
+其次在封装函数再编译的时候只用gcc job1.cpp -o job1报错
+in function `main':
+job1.cpp:(.text+0x19c): undefined reference to `ThreeIntSort(int*, int*, int*)'
+然后发现头文件只写了#include "helper.h"，并没有包含进函数原型，于是解决如下
+gcc job1.c helper.c -o job1
+
+2.用测试文件测试一下，发现错误
+SwapInt 测试通过！
+ThreeIntSort 测试通过！
+test_job: test_job1.cpp:61: void test_FourIntSort(): Assertion `FourIntSort(&a, &b, &c, &d) == true' failed.
+Aborted (core dumped)
+根据报错得知是这个用例
+    // 测试用例 2：逆序
+    a = 4; b = 3; c = 2; d = 1;
+    assert(FourIntSort(&a, &b, &c, &d) == true);
+    assert(a == 1 && b == 2 && c == 3 && d == 4);
+
+先用gdb调试一下 gcc job1.cpp -o job1 -g 用-g加上调试程序方面的支持
+然后把断点设置在返回前一行，打印一下各变量的值（其实如果返回语句没检查得那么严格的话在终端就可以看见了，但是并不合适，既然要求“false，排序失败”）
 Breakpoint 1, FourIntSort (x1=0x7fffffffd09c, x2=0x7fffffffd0a0, x3=0x7fffffffd0a4, x4=0x7fffffffd0a8) at job1.cpp:95
 95              return *x1 <= *x2 && *x2 <= *x3 && *x3 <= *x4;
-whatever
+(gdb) print *x1
+$1 = 2
+(gdb) print *x2
+$2 = 1
+(gdb) print *x3
+$3 = 3
+(gdb) print *x4
+$4 = 4
+于是发现是第一个和第二个变量的位置没有调换，我写的代码的逻辑是前三个和后三个先后排列
+然后再判断分界处（即第一个和第二个）的大小关系，所以错误明显在这里，回去看发现是
+if(x1 > x2)写成了地址比较
+改成if(*x1 > *x2)，四个数写错了那五个数应该也写错了，一起改完。
+然后回想一下根据gdb给的一堆信息可以看到x1=0x7fffffffd09c, x2=0x7fffffffd0a0, x3=0x7fffffffd0a4, x4=0x7fffffffd0a8
+四个变量是按地址从小到大的顺序排列的，所以做指针比较x1<x2永远为真。
 
-2. wrap 
-g++ job1.cpp helper.c -o job1
+3.测试数据比较常规，每个排序函数都用了顺序、逆序、随机顺序、有相同元素、所有元素相同五个案例，
+由于函数本身比较简单，复杂的用例似乎也没什么必要。
 
-3.错误。帮助函数原型注释写错了？pic
-
-
-
-
-
-
-// copilot给我的参考
-报告
-1. 遇到的重要编译错误及解决方法
-在编译 job1.cpp 文件时，遇到了以下几个重要的编译错误：
-
-缺少终止的双引号：
-
-错误信息：job1.cpp:55:10: warning: missing terminating " character
-解决方法：检查并修正代码中的字符串常量，确保每个字符串常量都有正确的双引号包围。
-程序中存在非法字符：
-
-错误信息：job1.cpp:56:5: error: stray ‘\350’ in program 等一系列类似错误。
-解决方法：这些错误通常是由于文件编码问题或复制粘贴时引入的非法字符导致的。通过重新输入相关代码或使用文本编辑器转换文件编码来解决。
-函数参数数量不足：
-
-错误信息：job1.cpp:60:42: error: too few arguments to function ‘bool ThreeIntSort(int*, int*, int*)’
-解决方法：确保在调用 ThreeIntSort、FourIntSort 和 FiveIntSort 函数时传递了正确数量的参数。
-函数返回类型缺少返回语句：
-
-错误信息：job1.cpp:75:1: warning: no return statement in function returning non-void [-Wreturn-type]
-解决方法：在 ThreeIntSort、FourIntSort、FiveIntSort 和 SwapInt 函数中添加返回语句。
-2. 调试方法及遇到的bug和解决方法
-使用 gdb 进行调试时，遇到了以下几个问题：
-
-程序崩溃：
-
-通过 gdb 运行程序并设置断点，逐步执行代码，发现程序在处理输入时崩溃。
-解决方法：检查输入处理逻辑，确保正确读取和解析输入数据。
-排序结果不正确：
-
-通过 gdb 逐步调试排序函数，发现排序逻辑存在问题。
-解决方法：修正排序函数中的逻辑错误，确保每次比较和交换操作都正确执行。
-3. 测试数据设计及使用情况
-为了全面测试程序的功能，设计了以下几组测试数据：
-
-命令行参数传入：
-
-测试数据：job1 5 3 4 1 2
-预期结果：前三个整数排序结果：1 3 4，前四个整数排序结果：1 3 4 5，前五个整数排序结果：1 2 3 4 5
-运行时键盘输入：
-
-测试数据：5 3 4 1 2
-预期结果：同上
-文件读入：
-
-测试数据文件 input.txt 内容：5 3 4 1 2
-预期结果：同上
-4. job1.cpp 中的错误及修改方法
-在 job1.cpp 文件中，初始存在以下几个错误：
-
-函数声明和定义顺序问题：
-
-错误：函数声明在文件开头，但定义在 main 函数之后，导致编译器在编译 main 函数时找不到这些函数的定义。
-修改方法：将函数定义移到 main 函数之前。
-重复的函数注释：
-
-错误：FiveIntSort 函数的注释错误地写成了 ThreeIntSort。
-修改方法：修正注释，确保每个函数的注释描述正确。
-缺少头文件：
-
-错误：bool 类型在 C 中不是标准类型，需要包含 <stdbool.h> 头文件。
-修改方法：在文件开头添加 #include <stdbool.h>。
-未补全的函数实现：
-
-错误：SwapInt、ThreeIntSort、FourIntSort 和 FiveIntSort 函数的实现部分缺失。
-修改方法：补全这些函数的实现，确保每个函数都能正确执行其功能。
-未处理命令行输入：
-
-错误：main 函数中提到要从命令行或其他方式读入 5 个整数，但没有实现相关代码。
-修改方法：实现从命令行或其他方式读入 5 个整数的代码。
+4.在原文件中没发现什么错误，只是FiveIntSort函数的注释写成了ThreeIntSort。
