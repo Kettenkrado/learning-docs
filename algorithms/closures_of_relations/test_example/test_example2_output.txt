@@ -1,0 +1,35 @@
+the original relation m is:
+0 0 0 0 1 
+1 0 0 1 0 
+0 0 0 1 0 
+1 0 1 0 0 
+1 1 1 0 1 
+
+the reflexive closure of relation m is:
+1 0 0 0 1 
+1 1 0 1 0 
+0 0 1 1 0 
+1 0 1 1 0 
+1 1 1 0 1 
+
+the symmetric closure of relation m is:
+0 1 0 1 1 
+1 0 0 1 1 
+0 0 0 1 1 
+1 1 1 0 0 
+1 1 1 0 1 
+
+the transitive closure of relation m (under the classic algorithm) is:
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 1 1 1 
+
+the transitive closure of relation m (under the Warshall algorithm) is:
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 1 1 1 
+1 1 1 1 1 
+
