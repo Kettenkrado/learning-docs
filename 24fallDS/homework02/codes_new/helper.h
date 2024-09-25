@@ -1,3 +1,4 @@
+#include <stdbool.h>
 //SwapInt，交换x和y指向的内存地址的值 
 bool SwapInt(int* x, int* y);
 
