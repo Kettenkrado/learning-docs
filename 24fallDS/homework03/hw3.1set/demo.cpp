@@ -1,3 +1,6 @@
+// run gcc demo.cpp set.cpp -o demo to compile
+// run ./demo > demo_result.txt to get the result
+
 #include "set.h"
 #include <stdio.h>
 
