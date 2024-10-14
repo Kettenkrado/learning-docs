@@ -1,3 +1,9 @@
+#ifndef SET_H
+#define SET_H
+
+#include <stdio.h>
+#include <stdlib.h>
+
 #define INIT_SIZE 16
 
 typedef int Elem;
@@ -18,6 +24,11 @@ bool SetInsert(Set *S, Elem value);
 
 // 从集合S中删除元素e，返回值true表示成功，false表示失败 
 bool SetErase(Set *S, Elem value);
+
+// 对于添加和删除操作，有时需要重新分配数据数组大小
+// 例如最初添加了1024个元素，但删除了1000个，用1024的大小来存储24个元素显然太浪费
+// 于是当size/capacity<=0.25时做一次resize，缩小一半的空间
+// 将capacity限制在一到四倍size的大小
 
 // 移除集合S中所有元素，返回值true表示成功，false表示失败 
 bool SetClear(Set *S);
@@ -43,3 +54,5 @@ bool IsEmptySet(Set S);
 
 // 判断元素间是否相等
 bool equal(Elem x, Elem y);
+
+#endif

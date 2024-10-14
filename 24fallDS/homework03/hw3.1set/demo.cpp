@@ -2,22 +2,22 @@
 // run ./demo > demo_result.txt to get the result
 
 #include "set.h"
-#include <stdio.h>
 
 int main() {
   // a demo of set operations
   Set A, B, C, D;
-  int test_size = INIT_SIZE + 1;
+  int test_size = INIT_SIZE * 4 + 1;
   InitSet(&A);
 
   printf("插入一些元素\n");
-  for (int i = 0; i < test_size; i++) {
+  for (int i = 1; i < test_size; i++) {
     SetInsert(&A, i);
   } PrintSet(A);
 
-  printf("清除掉所有偶数元素\n");
-  for (int i = 0; i < test_size; i+=2) {
-    SetErase(&A, i);
+  printf("清除掉所有不是4的倍数的元素（缩小为1/4）\n");
+  for (int i = 1; i < test_size; i++) {
+    if(i % 4)
+      SetErase(&A, i);
   } PrintSet(A);
   
   if (SetFind(A, test_size / 2)) {
@@ -44,10 +44,10 @@ int main() {
           "B={x|x=7k, k为整数，x在0到100间}\n"
           "C=A∪B D=A∩B\n");
   InitSet(&A); InitSet(&B); InitSet(&C); InitSet(&D);
-  for (int i = 0; i < 100; i+=4) {
+  for (int i = 1; i < 100; i+=4) {
     SetInsert(&A, i);
   }
-  for (int i = 0; i < 100; i+=7) {
+  for (int i = 1; i < 100; i+=7) {
     SetInsert(&B, i);
   }
   SetUnion(A, B, &C);

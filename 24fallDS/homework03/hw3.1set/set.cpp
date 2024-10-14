@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "set.h"
 
 bool InitSet(Set *S) {
@@ -42,7 +40,7 @@ bool SetErase(Set *S, Elem x) {
   if (!SetFind(*S, x)) {
     return true;
   }
-
+  
   for (int i = 0; i < S->size; i++) {
     if (S->data[i] == x) {
       position = i;
@@ -54,6 +52,21 @@ bool SetErase(Set *S, Elem x) {
     S->data[i] = S->data[i + 1];
   }
   S->size--;
+
+  // resize the array if it's too large to hold the elements
+  if (S->capacity > 16 && S->size / (float)(S->capacity) <= 0.25) {
+    S->capacity /= 2;
+    Elem *newdata = (Elem*)malloc(sizeof(Elem) * S->capacity);
+    if (newdata == NULL) {
+      return false;
+    }
+
+    for (int i = 0; i < S->size; i++) {
+      newdata[i] = S->data[i];
+    }
+    free(S->data);
+    S->data = newdata;
+  }
   
   return !SetFind(*S, x);
 }
