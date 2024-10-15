@@ -1,0 +1,22 @@
+List size: 10
+List elements: 0 1 4 9 16 25 36 49 64 81 
+删除了现在的第一个元素0
+删除了现在的最后一个元素81
+List size: 8
+List elements: 1 4 9 16 25 36 49 64 
+删除了现在的第一个元素1
+删除了现在的最后一个元素64
+List size: 6
+List elements: 4 9 16 25 36 49 
+删除了现在的第一个元素4
+删除了现在的最后一个元素49
+List size: 4
+List elements: 9 16 25 36 
+删除了现在的第一个元素9
+删除了现在的最后一个元素36
+List size: 2
+List elements: 16 25 
+删除了现在的第一个元素16
+删除了现在的最后一个元素25
+List size: 0
+List elements: 
