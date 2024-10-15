@@ -16,17 +16,19 @@ typedef struct {
   dllNode* sentinel;
 } DLL; 
 
-// 线性表初始化
+// 线性表初始化，返回true代表初始化成功，false表示失败
 bool InitList(DLL* L);
 
-// 销毁线性表
+// 销毁线性表，返回true代表销毁成功，false表示失败
 bool DestroyList(DLL* L);
 
 // 在第i个位置前插入值为e的数据元素操作
 // 此处假设i从0开始取值
+// 返回true代表插入成功，false表示失败
 bool ListInsert(DLL* L, int i, Elem e);
 
 // 删除第i个位置数据元素并将被删除数据元素的值用参数e返回
+// 返回true代表删除成功，false表示失败
 bool ListDelete(DLL* L, int i, Elem* e);
 
 // helper functions: 非要求但对实现有帮助的函数

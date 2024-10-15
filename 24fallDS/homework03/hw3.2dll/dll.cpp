@@ -20,7 +20,7 @@ bool DestroyList(DLL* L) {
   }
   
   free(L->sentinel);
-  return true;
+  return L->sentinel == NULL && L->size == 0;
 }
 
 bool ListInsert(DLL* L, int i, Elem x) {
