@@ -143,7 +143,7 @@ NOTES:
  *   Rating: 1
  */
 int bitXor(int x, int y) {
-  /* a xor b = (~a & b) | (a & (~b)) = ~(~(~a & b) & ~(a & (~b)))*/
+  /* simplifies the boolean algebra for x xor y */
   return ~(~(~x & y) & ~(x & (~y)));
 }
 /* 
@@ -153,8 +153,8 @@ int bitXor(int x, int y) {
  *   Rating: 1
  */
 int tmin(void) {
-
-  return 2;
+  /* TMin = 10..00, by the structure of it, we can left shift 1 for 31 bits */
+  return 0x1 << 0x1F;
 
 }
 //2
@@ -166,7 +166,12 @@ int tmin(void) {
  *   Rating: 1
  */
 int isTmax(int x) {
-  return 2;
+  int xtimes2plus1 = x + x + 1;
+  int all_ones = ~xtimes2plus1; // should be zero
+  int originally_all_ones = !(x + 1); 
+  // if originally all ones, x = 0b11..1
+  // we need this to be zero if x=tmax
+  return !(all_ones + originally_all_ones);
 }
 /* 
  * allOddBits - return 1 if all odd-numbered bits in word set to 1
@@ -177,7 +182,9 @@ int isTmax(int x) {
  *   Rating: 2
  */
 int allOddBits(int x) {
-  return 2;
+  int check = (0xAA << 0x8) + 0xAA;
+  check = (check << 0x10) + check;
+  return !((x & check) ^ check);
 }
 /* 
  * negate - return -x 
@@ -187,7 +194,7 @@ int allOddBits(int x) {
  *   Rating: 2
  */
 int negate(int x) {
-  return 2;
+  return ~x + 1;
 }
 //3
 /* 
@@ -200,7 +207,16 @@ int negate(int x) {
  *   Rating: 3
  */
 int isAsciiDigit(int x) {
-  return 2;
+  /* check1 to keep the necessary bits, then check2 to verify if they are the right ones */
+  // 0b00110xxx mask for 0x30 to 0x37
+  int check1 = 0b11111000; // keep the leading 5 bits
+  int check2 = 0b00110000; // check if it fits in the pattern
+  // 0b0011100x mask for 0x38 and 0x39
+  int check3 = 0b11111110; 
+  int check4 = 0b00111000; 
+  int tail_true = !((x & check1) ^ check2) + !((x & check3) ^ check4);
+  int head_true = !(x >> 0x8); // leading 24 bits should be zeroes..
+  return head_true & tail_true;
 }
 /* 
  * conditional - same as x ? y : z 
@@ -210,7 +226,17 @@ int isAsciiDigit(int x) {
  *   Rating: 3
  */
 int conditional(int x, int y, int z) {
-  return 2;
+  /* primary design, which exceeds max ops, then realise it can be much simpler.
+  int mask = 0xFF;
+  mask = mask + mask << 0x8;
+  mask = mask + mask << 0x10; */
+  int mask = ~0x0; 
+  int notx = !x; // make use of x to modify masks
+  int y_cond_mask = mask + notx;
+  int z_cond_mask = mask + !notx; 
+  // if x!=0, y_cond_mask= 0xFFFFFFFF, z_cond_mask=0x0
+  // if x=0,  y_cond_mask= 0x0, z_cond_mask=0xFFFFFFFF
+  return (y_cond_mask & y) + (z_cond_mask & z);
 }
 /* 
  * isLessOrEqual - if x <= y  then return 1, else return 0 
@@ -220,7 +246,13 @@ int conditional(int x, int y, int z) {
  *   Rating: 3
  */
 int isLessOrEqual(int x, int y) {
-  return 2;
+  int diff = y + (~x + 1);
+  int flag = (diff >> 0x1F) & 0x1; // normal mode, y-x>0 gives 0
+  int xflag = (x >> 0x1F) & 0x1;
+  int yflag = (y >> 0x1F) & 0x1;
+  int neg_pos = xflag & (!yflag); // directly by flag mode, x<0 and y>0 gives 1
+  int pos_neg = (!xflag) & yflag; // x>0 and y<0 gives 1
+  return neg_pos | ((!pos_neg) & (!flag)); 
 }
 //4
 /* 
@@ -232,7 +264,14 @@ int isLessOrEqual(int x, int y) {
  *   Rating: 4 
  */
 int logicalNeg(int x) {
-  return 2;
+  int self_or = x;
+  self_or = self_or | (self_or >> 0x10);
+  self_or = self_or | (self_or >> 0x08);
+  self_or = self_or | (self_or >> 0x04);
+  self_or = self_or | (self_or >> 0x02);
+  self_or = self_or | (self_or >> 0x01);
+  self_or = self_or & 0x1;
+  return !self_or;
 }
 /* howManyBits - return the minimum number of bits required to represent x in
  *             two's complement
@@ -247,6 +286,9 @@ int logicalNeg(int x) {
  *  Rating: 4
  */
 int howManyBits(int x) {
+  /* count all zeroes before met the first non-zero bit or end */
+  int result, flag = 1, 0; // flag is the signal that the first non-zero bit
+  x = ~x;
   return 0;
 }
 //float
