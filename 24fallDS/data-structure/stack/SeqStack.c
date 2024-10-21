@@ -2,16 +2,6 @@
 #include <stdlib.h>
 #include "SeqStack.h"
 
-#define MAXSIZE 1024
-
-typedef struct {
-  int top;
-  Elem data[MAXSIZE];
-  // int nMaxSize;
-  // Elem *data;
-  // 顺序存储的非固定大小的栈
-} SeqStack;
-
 SeqStack *Init_SeqStack()
 {
   SeqStack *s = (SeqStack *)malloc(sizeof(SeqStack));
@@ -45,7 +35,7 @@ int Push_SeqStack(SeqStack *s, Elem x)
 
 int Pop_SeqStack(SeqStack *s, Elem *x)
 {
-  if (IsEmpt_SeqStack(s))
+  if (Empty_SeqStack(s))
     return 0;
   else {
     *x = s->data[s->top];
@@ -56,7 +46,7 @@ int Pop_SeqStack(SeqStack *s, Elem *x)
 
 int Top_SeqStack(SeqStack *s, Elem *x)
 {
-  if (IsEmpt_SeqStack(s))
+  if (Empty_SeqStack(s))
     return 0;
   else {
     *x = s->data[s->top];

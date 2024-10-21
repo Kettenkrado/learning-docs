@@ -17,14 +17,15 @@ void conversions(int n, int base1, int base2)
   int i = 0, mid = 0;
   SeqStack *s = Init_SeqStack();
   
-  
   while (n) {
-    mid += (n % 10) * pow(base1, i);
+    mid += (n % 10) * (int) pow(base1, i);
+    n /= base1;
     i++;
   }
   
   while (mid) {
     Push_SeqStack(s, mid % base2);
+    mid /= base2;
   }
 
   while (!Empty_SeqStack(s)) {
