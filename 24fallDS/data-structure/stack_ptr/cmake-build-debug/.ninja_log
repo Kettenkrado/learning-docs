@@ -1,0 +1,5 @@
+# ninja log v6
+13	105	7512745903521105	CMakeFiles/stack_ptr.dir/main.c.obj	57272270fa50dfdc
+61	204	7512762005566005	CMakeFiles/stack_ptr.dir/main.c.obj	57272270fa50dfdc
+41	227	7512762005354938	CMakeFiles/stack_ptr.dir/SeqStackPtr.c.obj	d0b70baa3453fa14
+227	356	7512762007219000	stack_ptr.exe	40506c81df67f223

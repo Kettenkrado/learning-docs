@@ -1,0 +1,3 @@
+D:/learning-docs/24fallDS/data-structure/stack_ptr/cmake-build-debug/CMakeFiles/stack_ptr.dir
+D:/learning-docs/24fallDS/data-structure/stack_ptr/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/learning-docs/24fallDS/data-structure/stack_ptr/cmake-build-debug/CMakeFiles/rebuild_cache.dir
