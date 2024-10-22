@@ -32,4 +32,6 @@ void conversions(int n, int base1, int base2)
     Pop_SeqStack(s, &i);
     printf("%d", i);
   } printf("\n");
+
+  Destroy_SeqStack(s);
 }

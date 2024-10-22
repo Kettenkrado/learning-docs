@@ -6,6 +6,6 @@ set(CMAKE_C_STANDARD 11)
 include_directories(.)
 
 add_executable(stack
-        applications.c
+        main.c
         SeqStack.c
         SeqStack.h)

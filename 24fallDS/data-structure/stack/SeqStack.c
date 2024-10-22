@@ -53,3 +53,7 @@ int Top_SeqStack(SeqStack *s, Elem *x)
     return 1;
   }
 }
+
+void Destroy_SeqStack(SeqStack *s) {
+    free(s);
+}
