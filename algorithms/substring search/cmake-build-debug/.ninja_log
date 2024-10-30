@@ -1,0 +1,26 @@
+# ninja log v6
+13	106	7519769450896052	CMakeFiles/substring_search.dir/bruteForce.c.obj	f65fec5ba2071310
+3	85	7519769613294274	CMakeFiles/substring_search.dir/main.c.obj	38fbbcf44f2ed35c
+85	193	7519769614114955	substring_search.exe	d7a1d1b3462efc18
+22	161	7519955136674888	CMakeFiles/substring_search.dir/bruteForce.c.obj	f65fec5ba2071310
+31	162	7519955136765588	CMakeFiles/substring_search.dir/kmp.c.obj	4b9f7da9eda064e9
+8	166	7519955136537702	CMakeFiles/substring_search.dir/main.c.obj	38fbbcf44f2ed35c
+167	394	7519955138125383	substring_search.exe	3ffe3719a7d9d316
+4	142	7519962088636115	CMakeFiles/substring_search.dir/main.c.obj	38fbbcf44f2ed35c
+17	145	7519962088773269	CMakeFiles/substring_search.dir/kmp.c.obj	4b9f7da9eda064e9
+145	355	7519962090044526	substring_search.exe	3ffe3719a7d9d316
+10	93	7519966621167606	CMakeFiles/substring_search.dir/kmp.c.obj	4b9f7da9eda064e9
+3	104	7519966621102486	CMakeFiles/substring_search.dir/main.c.obj	38fbbcf44f2ed35c
+104	260	7519966622109135	substring_search.exe	3ffe3719a7d9d316
+3	164	7519970872431459	CMakeFiles/substring_search.dir/main.c.obj	38fbbcf44f2ed35c
+165	339	7519970874050656	substring_search.exe	3ffe3719a7d9d316
+5	138	7519971300572371	CMakeFiles/substring_search.dir/main.c.obj	38fbbcf44f2ed35c
+138	361	7519971301903377	substring_search.exe	3ffe3719a7d9d316
+4	116	7519972397966898	CMakeFiles/substring_search.dir/main.c.obj	38fbbcf44f2ed35c
+117	279	7519972399088782	substring_search.exe	3ffe3719a7d9d316
+5	155	7519972995156076	CMakeFiles/substring_search.dir/main.c.obj	38fbbcf44f2ed35c
+156	344	7519972996661596	substring_search.exe	3ffe3719a7d9d316
+9	112	7519973049091866	CMakeFiles/substring_search.dir/main.c.obj	38fbbcf44f2ed35c
+113	294	7519973050113906	substring_search.exe	3ffe3719a7d9d316
+5	110	7519976650600246	CMakeFiles/substring_search.dir/main.c.obj	38fbbcf44f2ed35c
+112	242	7519976651678654	substring_search.exe	3ffe3719a7d9d316

@@ -1,0 +1,71 @@
+1. Substring Searching: Find patter of length M in a text of length N
+1.1 ex. extract relevant data from web page: find string delimited by <b> and </b> after the first occurrence of pattern "Last Trade:".
+1.2 Java lib: the indexOf() method in Java's string library returns the index of the first occurrence of a give string, starting at a given offset
+(reading text from a given website...)
+`int start = text.indexOf("Last Trade:", 0);
+ int from  = text.indexOf("<b>", start);
+ int to    = text.indexOf("</b>", from);
+ String price = text.substring(from + 3, to);`
+
+2. brutal force search:
+we have i for the position in the text, j for the length of matched characters in text,
+i+j for the position being compared in the text
+return i when j is M, otherwise, return -1
+2.1 worst case: consider AAAAAAA...AAB as text, AAAAAB as pattern, then we have to check about MN times
+2.2 backup: we want to avoid backup in text stream, brute force searching needs backup for every mismatch
+approach1: maintain buffer of last M characters;
+approach2: stay tuned.
+2.3 challenges:
+2.3.1 theoretical challenge: linear time guarantee(fundamental algorithmic problem)
+
+3. Knuth-Morris-Pratt
+3.1 Intuition: suppose we are searching in text for pattern BAAAAAAAAA, alphabet {A, B}
+    suppose we match 5 chars in pattern, with mismatch on 6th char;
+    so we know previous 6 chars are BAAAAB in text,
+    with such knowledge, we do not need to back up text pointer, we can move up.
+    KMP: clever method to always avoid backup!
+3.2 Deterministic Finite-state Automaton(DFA): abstract string-searching machine.
+    1. finite number of states
+    2. exactly one transition for each char in alphabet
+    3. accept if sequence of transitions leads to halt state
+3.3 example:
+    j        | 0 1 2 3 4 5
+    pat[j]   | A B A B A C
+    dfa[][j] | 1 1 3 1 5 1 (A)
+             | 0 2 0 4 0 4 (B)
+             | 0 0 0 0 0 6 (C)
+    if in state j reading char c: if j is 6 halt and accept, else move to state dfa[c][j]
+    Q: what is the interpretation of DFA state after reading in txt[i]?
+    A: state = number of characters in pattern that have been matched.
+       aka, length of longest prefix of pat[] that is a suffix of txt[0..i]
+3.4 purpose: build the dfa.
+    1. match transition: if in state j and next char c == pat[j], go to j+1;
+        j        | 0 1 2 3 4 5
+        pat[j]   | A B A B A C
+        dfa[][j] | 1   3   5   (A)
+                 |   2   4     (B)
+                 |           6 (C)
+    2. mismatch transition: backup if c!= pat[j]
+        when j == 0, already matched length, of course, is 0, prefix is empty, the overlapping part must be 0
+        when j == 1, already matched length, is one, and suffix is the length one part of pat, A
+                     (matched situation is B)
+                     reading A, overlapping length = 1
+                     reading C, overlapping length = 0
+        when j == 2, AB, reading B/C, ABB/C(pre) and AB(suf) will not overlap, 0
+        when j == 3, ABA, reading A, ABAA, ABA, overlap is A
+                          reading C, ABAC, ABA, overlap is ""
+        ...
+        abstract away the real part, j == x, then previously match part is pat[0..x-1], namely, suffix,
+        the read part is pat[0..x-1]+current char, namely, prefix,
+        then let y increment from 0 to x-1, see if suffix[x-1-y..x-1] matches prefix[0..y], return y.
+        ALGORITHM.
+
+        MODIFICATION: to compute DFA[c][j], simulate pat[1..j-1] on DFA and take transition c.
+                      X = pat[1..j-1], for example, when j = 5, pat[1..j-1] = BABA = X, X is viewed as 3,
+                      dfa['A'][5] = dfa['A'][X] = 1; dfa['B'][5] = 4; X' = dfa['C'][X] = 0.
+
+                      pat[1..j-1] = BABA = X, X is viewed as 3? Why?
+                      from scratch, read B, X = 0, then read ABA, we can reach state 3.
+                      Still, the idea of running the suffix to reach prefix where...
+
+3.5 KMP Analysis: kmp substring search accesses no more than M+N chars to search for a pattern of length M in a text of length N.
