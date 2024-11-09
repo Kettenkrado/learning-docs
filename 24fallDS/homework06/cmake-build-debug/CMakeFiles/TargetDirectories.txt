@@ -1,0 +1,3 @@
+D:/learning-docs/24fallDS/homework06/cmake-build-debug/CMakeFiles/BinTree.dir
+D:/learning-docs/24fallDS/homework06/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/learning-docs/24fallDS/homework06/cmake-build-debug/CMakeFiles/rebuild_cache.dir
