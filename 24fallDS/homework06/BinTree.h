@@ -3,9 +3,9 @@
 
 typedef char ElemType;
 
-//二叉树的链式存储实现，基本操作函数定义
+// 二叉树的链式存储实现，基本操作函数定义
 // 参考严蔚敏教材，P127，定义结点的类型
-//结点的存储结构
+// 结点的存储结构
 typedef struct BiTNode
 {
     ElemType  data;
@@ -31,6 +31,7 @@ BiTree CreateBinTree(char * preordString, int & nStringStart);
 //   这个是采用指针传递参数的，有兴趣的同学可以试着实现一下这个
 BiTree CreateBinTree(char * preordString, int * pnStringStart);
 
+// 3.2 创建一个二叉树，提供左右孩子指针
 BiTree CreateBinTree(ElemType rootVal, BiTree leftChild, BiTree rightChild);
 
 //4.1 先序遍历二叉树，将结果输出到控制台（stdc::out）
