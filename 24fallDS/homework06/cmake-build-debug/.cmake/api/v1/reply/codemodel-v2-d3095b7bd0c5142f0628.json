@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.29"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "BinTree",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "BinTreeDemo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-BinTreeDemo-Debug-6ba655453c9d0fdfacc4.json",
+					"name" : "BinTreeDemo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nearAnc::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nearAnc-Debug-cd9a736fcb09f9d06c1e.json",
+					"name" : "nearAnc",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "root2leaf::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-root2leaf-Debug-ba9502b307d2ed586de0.json",
+					"name" : "root2leaf",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rpn2infix::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rpn2infix-Debug-c01311cf13996efe8622.json",
+					"name" : "rpn2infix",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/learning-docs/24fallDS/homework06/cmake-build-debug",
+		"source" : "D:/learning-docs/24fallDS/homework06"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

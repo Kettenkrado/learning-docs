@@ -1,0 +1,2 @@
+The nearest ancestor of J and K is: H
+The nearest ancestor of D and E is: B

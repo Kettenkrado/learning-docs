@@ -41,38 +41,168 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = D$:/learning-docs/24fallDS/homework06/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target BinTree
+# Object build statements for EXECUTABLE target BinTreeDemo
 
 
 #############################################
-# Order-only phony target for BinTree
+# Order-only phony target for BinTreeDemo
 
-build cmake_object_order_depends_target_BinTree: phony || .
+build cmake_object_order_depends_target_BinTreeDemo: phony || .
 
-build CMakeFiles/BinTree.dir/BinTree.cpp.obj: CXX_COMPILER__BinTree_unscanned_Debug D$:/learning-docs/24fallDS/homework06/BinTree.cpp || cmake_object_order_depends_target_BinTree
-  DEP_FILE = CMakeFiles\BinTree.dir\BinTree.cpp.obj.d
+build CMakeFiles/BinTreeDemo.dir/src/BinTree.cpp.obj: CXX_COMPILER__BinTreeDemo_unscanned_Debug D$:/learning-docs/24fallDS/homework06/src/BinTree.cpp || cmake_object_order_depends_target_BinTreeDemo
+  DEP_FILE = CMakeFiles\BinTreeDemo.dir\src\BinTree.cpp.obj.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
   INCLUDES = -ID:/learning-docs/24fallDS/homework06/.
-  OBJECT_DIR = CMakeFiles\BinTree.dir
-  OBJECT_FILE_DIR = CMakeFiles\BinTree.dir
+  OBJECT_DIR = CMakeFiles\BinTreeDemo.dir
+  OBJECT_FILE_DIR = CMakeFiles\BinTreeDemo.dir\src
+
+build CMakeFiles/BinTreeDemo.dir/src/BinTreeDemo.cpp.obj: CXX_COMPILER__BinTreeDemo_unscanned_Debug D$:/learning-docs/24fallDS/homework06/src/BinTreeDemo.cpp || cmake_object_order_depends_target_BinTreeDemo
+  DEP_FILE = CMakeFiles\BinTreeDemo.dir\src\BinTreeDemo.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -ID:/learning-docs/24fallDS/homework06/.
+  OBJECT_DIR = CMakeFiles\BinTreeDemo.dir
+  OBJECT_FILE_DIR = CMakeFiles\BinTreeDemo.dir\src
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target BinTree
+# Link build statements for EXECUTABLE target BinTreeDemo
 
 
 #############################################
-# Link the executable BinTree.exe
+# Link the executable BinTreeDemo.exe
 
-build BinTree.exe: CXX_EXECUTABLE_LINKER__BinTree_Debug CMakeFiles/BinTree.dir/BinTree.cpp.obj
+build BinTreeDemo.exe: CXX_EXECUTABLE_LINKER__BinTreeDemo_Debug CMakeFiles/BinTreeDemo.dir/src/BinTree.cpp.obj CMakeFiles/BinTreeDemo.dir/src/BinTreeDemo.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\BinTree.dir
+  OBJECT_DIR = CMakeFiles\BinTreeDemo.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = BinTree.exe
-  TARGET_IMPLIB = libBinTree.dll.a
-  TARGET_PDB = BinTree.exe.dbg
+  TARGET_FILE = BinTreeDemo.exe
+  TARGET_IMPLIB = libBinTreeDemo.dll.a
+  TARGET_PDB = BinTreeDemo.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target nearAnc
+
+
+#############################################
+# Order-only phony target for nearAnc
+
+build cmake_object_order_depends_target_nearAnc: phony || .
+
+build CMakeFiles/nearAnc.dir/src/nearestAncestor.cpp.obj: CXX_COMPILER__nearAnc_unscanned_Debug D$:/learning-docs/24fallDS/homework06/src/nearestAncestor.cpp || cmake_object_order_depends_target_nearAnc
+  DEP_FILE = CMakeFiles\nearAnc.dir\src\nearestAncestor.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -ID:/learning-docs/24fallDS/homework06/.
+  OBJECT_DIR = CMakeFiles\nearAnc.dir
+  OBJECT_FILE_DIR = CMakeFiles\nearAnc.dir\src
+
+build CMakeFiles/nearAnc.dir/src/BinTree.cpp.obj: CXX_COMPILER__nearAnc_unscanned_Debug D$:/learning-docs/24fallDS/homework06/src/BinTree.cpp || cmake_object_order_depends_target_nearAnc
+  DEP_FILE = CMakeFiles\nearAnc.dir\src\BinTree.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -ID:/learning-docs/24fallDS/homework06/.
+  OBJECT_DIR = CMakeFiles\nearAnc.dir
+  OBJECT_FILE_DIR = CMakeFiles\nearAnc.dir\src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target nearAnc
+
+
+#############################################
+# Link the executable nearAnc.exe
+
+build nearAnc.exe: CXX_EXECUTABLE_LINKER__nearAnc_Debug CMakeFiles/nearAnc.dir/src/nearestAncestor.cpp.obj CMakeFiles/nearAnc.dir/src/BinTree.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\nearAnc.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = nearAnc.exe
+  TARGET_IMPLIB = libnearAnc.dll.a
+  TARGET_PDB = nearAnc.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target root2leaf
+
+
+#############################################
+# Order-only phony target for root2leaf
+
+build cmake_object_order_depends_target_root2leaf: phony || .
+
+build CMakeFiles/root2leaf.dir/src/root2leaf.cpp.obj: CXX_COMPILER__root2leaf_unscanned_Debug D$:/learning-docs/24fallDS/homework06/src/root2leaf.cpp || cmake_object_order_depends_target_root2leaf
+  DEP_FILE = CMakeFiles\root2leaf.dir\src\root2leaf.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -ID:/learning-docs/24fallDS/homework06/.
+  OBJECT_DIR = CMakeFiles\root2leaf.dir
+  OBJECT_FILE_DIR = CMakeFiles\root2leaf.dir\src
+
+build CMakeFiles/root2leaf.dir/src/BinTree.cpp.obj: CXX_COMPILER__root2leaf_unscanned_Debug D$:/learning-docs/24fallDS/homework06/src/BinTree.cpp || cmake_object_order_depends_target_root2leaf
+  DEP_FILE = CMakeFiles\root2leaf.dir\src\BinTree.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -ID:/learning-docs/24fallDS/homework06/.
+  OBJECT_DIR = CMakeFiles\root2leaf.dir
+  OBJECT_FILE_DIR = CMakeFiles\root2leaf.dir\src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target root2leaf
+
+
+#############################################
+# Link the executable root2leaf.exe
+
+build root2leaf.exe: CXX_EXECUTABLE_LINKER__root2leaf_Debug CMakeFiles/root2leaf.dir/src/root2leaf.cpp.obj CMakeFiles/root2leaf.dir/src/BinTree.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\root2leaf.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = root2leaf.exe
+  TARGET_IMPLIB = libroot2leaf.dll.a
+  TARGET_PDB = root2leaf.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target rpn2infix
+
+
+#############################################
+# Order-only phony target for rpn2infix
+
+build cmake_object_order_depends_target_rpn2infix: phony || .
+
+build CMakeFiles/rpn2infix.dir/src/BinTree.cpp.obj: CXX_COMPILER__rpn2infix_unscanned_Debug D$:/learning-docs/24fallDS/homework06/src/BinTree.cpp || cmake_object_order_depends_target_rpn2infix
+  DEP_FILE = CMakeFiles\rpn2infix.dir\src\BinTree.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -ID:/learning-docs/24fallDS/homework06/.
+  OBJECT_DIR = CMakeFiles\rpn2infix.dir
+  OBJECT_FILE_DIR = CMakeFiles\rpn2infix.dir\src
+
+build CMakeFiles/rpn2infix.dir/src/rpn2infix.cpp.obj: CXX_COMPILER__rpn2infix_unscanned_Debug D$:/learning-docs/24fallDS/homework06/src/rpn2infix.cpp || cmake_object_order_depends_target_rpn2infix
+  DEP_FILE = CMakeFiles\rpn2infix.dir\src\rpn2infix.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -ID:/learning-docs/24fallDS/homework06/.
+  OBJECT_DIR = CMakeFiles\rpn2infix.dir
+  OBJECT_FILE_DIR = CMakeFiles\rpn2infix.dir\src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target rpn2infix
+
+
+#############################################
+# Link the executable rpn2infix.exe
+
+build rpn2infix.exe: CXX_EXECUTABLE_LINKER__rpn2infix_Debug CMakeFiles/rpn2infix.dir/src/BinTree.cpp.obj CMakeFiles/rpn2infix.dir/src/rpn2infix.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\rpn2infix.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = rpn2infix.exe
+  TARGET_IMPLIB = librpn2infix.dll.a
+  TARGET_PDB = rpn2infix.exe.dbg
 
 
 #############################################
@@ -100,7 +230,13 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build BinTree: phony BinTree.exe
+build BinTreeDemo: phony BinTreeDemo.exe
+
+build nearAnc: phony nearAnc.exe
+
+build root2leaf: phony root2leaf.exe
+
+build rpn2infix: phony rpn2infix.exe
 
 # =============================================================================
 # Folder targets.
@@ -110,7 +246,7 @@ build BinTree: phony BinTree.exe
 #############################################
 # Folder: D:/learning-docs/24fallDS/homework06/cmake-build-debug
 
-build all: phony BinTree.exe
+build all: phony BinTreeDemo.exe nearAnc.exe root2leaf.exe rpn2infix.exe
 
 # =============================================================================
 # Built-in targets

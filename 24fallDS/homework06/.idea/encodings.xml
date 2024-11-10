@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/BinTree.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/logfile/q3result.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/logfile/q3result.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/logfile/q5result.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/logfile/q5result.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/BinTree.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/BinTreeDemo.cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/rpn2infix.cpp" charset="GBK" />
   </component>
 </project>
