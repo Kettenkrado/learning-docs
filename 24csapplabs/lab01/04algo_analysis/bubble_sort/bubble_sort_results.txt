@@ -1,0 +1,24 @@
+Running bubble_sort_O0.out...
+Time: 0:07.91, Memory: 1536 KB
+Binary size: 16416 bytes
+
+Running bubble_sort_O1.out...
+Time: 0:04.29, Memory: 1536 KB
+Binary size: 16424 bytes
+
+Running bubble_sort_O2.out...
+Time: 0:04.50, Memory: 1536 KB
+Binary size: 16424 bytes
+
+Running bubble_sort_O3.out...
+Time: 0:06.36, Memory: 1536 KB
+Binary size: 16424 bytes
+
+Running bubble_sort_Os.out...
+Time: 0:03.93, Memory: 1536 KB
+Binary size: 16424 bytes
+
+Running bubble_sort_Ofast.out...
+Time: 0:06.38, Memory: 1152 KB
+Binary size: 17928 bytes
+

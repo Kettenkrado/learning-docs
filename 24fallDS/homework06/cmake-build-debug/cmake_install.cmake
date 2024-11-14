@@ -1,8 +1,8 @@
-# Install script for directory: D:/learning-docs/24fallDS/homework06
+# Install script for directory: D:/Ondrive_school/OneDrive - bupt.cn/learning-docs/24fallDS/homework06
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/homework06")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/BinTree")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/learning-docs/24fallDS/homework06/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Ondrive_school/OneDrive - bupt.cn/learning-docs/24fallDS/homework06/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

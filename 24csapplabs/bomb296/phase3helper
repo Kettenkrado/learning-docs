@@ -1,0 +1,8 @@
+set $i=0
+set $j=8
+while ($j) 
+	p /x *(0x4026a0+8*$i)
+	set $i++
+	set $j--
+end
+

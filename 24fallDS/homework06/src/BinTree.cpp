@@ -162,5 +162,3 @@ int BiTreeLevelCount(BiTree bt)
 	if (bt == NULL) return 0;
     else return 1 + max(BiTreeLevelCount(bt->left), BiTreeLevelCount(bt->right));
 }
-
- 

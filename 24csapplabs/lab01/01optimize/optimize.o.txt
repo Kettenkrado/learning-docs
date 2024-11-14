@@ -1,0 +1,66 @@
+
+optimize.o:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000000000 <main>:
+main():
+/home/students/2022211419/lab01/01optimize/optimize.c:4
+#include <stdio.h>
+
+int main(void) 
+{
+   0:	f3 0f 1e fa          	endbr64 
+   4:	55                   	push   %rbp
+   5:	48 89 e5             	mov    %rsp,%rbp
+   8:	48 83 ec 20          	sub    $0x20,%rsp
+/home/students/2022211419/lab01/01optimize/optimize.c:8
+	double counter;
+	double result;
+	double temp;
+	for(counter=0;counter<2000.0*2000.0*2000.0/20.0+2020;
+   c:	66 0f ef c0          	pxor   %xmm0,%xmm0
+  10:	f2 0f 11 45 e8       	movsd  %xmm0,-0x18(%rbp)
+  15:	eb 36                	jmp    4d <main+0x4d>
+/home/students/2022211419/lab01/01optimize/optimize.c:10
+		counter+=(5-1)/4){
+		temp=counter/1979;
+  17:	f2 0f 10 45 e8       	movsd  -0x18(%rbp),%xmm0
+  1c:	f2 0f 10 0d 00 00 00 	movsd  0x0(%rip),%xmm1        # 24 <main+0x24>
+  23:	00 
+  24:	f2 0f 5e c1          	divsd  %xmm1,%xmm0
+  28:	f2 0f 11 45 f8       	movsd  %xmm0,-0x8(%rbp)
+/home/students/2022211419/lab01/01optimize/optimize.c:11
+		result=counter;
+  2d:	f2 0f 10 45 e8       	movsd  -0x18(%rbp),%xmm0
+  32:	f2 0f 11 45 f0       	movsd  %xmm0,-0x10(%rbp)
+/home/students/2022211419/lab01/01optimize/optimize.c:9
+		counter+=(5-1)/4){
+  37:	f2 0f 10 4d e8       	movsd  -0x18(%rbp),%xmm1
+  3c:	f2 0f 10 05 00 00 00 	movsd  0x0(%rip),%xmm0        # 44 <main+0x44>
+  43:	00 
+  44:	f2 0f 58 c1          	addsd  %xmm1,%xmm0
+  48:	f2 0f 11 45 e8       	movsd  %xmm0,-0x18(%rbp)
+/home/students/2022211419/lab01/01optimize/optimize.c:8 (discriminator 1)
+	for(counter=0;counter<2000.0*2000.0*2000.0/20.0+2020;
+  4d:	f2 0f 10 05 00 00 00 	movsd  0x0(%rip),%xmm0        # 55 <main+0x55>
+  54:	00 
+  55:	66 0f 2f 45 e8       	comisd -0x18(%rbp),%xmm0
+  5a:	77 bb                	ja     17 <main+0x17>
+/home/students/2022211419/lab01/01optimize/optimize.c:13
+	}
+	printf("Result is %lf\n", result);
+  5c:	48 8b 45 f0          	mov    -0x10(%rbp),%rax
+  60:	66 48 0f 6e c0       	movq   %rax,%xmm0
+  65:	48 8d 05 00 00 00 00 	lea    0x0(%rip),%rax        # 6c <main+0x6c>
+  6c:	48 89 c7             	mov    %rax,%rdi
+  6f:	b8 01 00 00 00       	mov    $0x1,%eax
+  74:	e8 00 00 00 00       	call   79 <main+0x79>
+/home/students/2022211419/lab01/01optimize/optimize.c:14
+	return 0;
+  79:	b8 00 00 00 00       	mov    $0x0,%eax
+/home/students/2022211419/lab01/01optimize/optimize.c:15
+}
+  7e:	c9                   	leave  
+  7f:	c3                   	ret    

@@ -1,0 +1,19 @@
+Results are:
+Running opt_argu_test_O0.out...
+Time for copyij is: 0.011093 seconds
+Time for copyji is: 0.103607 seconds
+Running opt_argu_test_O1.out...
+Time for copyij is: 0.002379 seconds
+Time for copyji is: 0.071542 seconds
+Running opt_argu_test_O2.out...
+Time for copyij is: 0.002355 seconds
+Time for copyji is: 0.071475 seconds
+Running opt_argu_test_O3.out...
+Time for copyij is: 0.000001 seconds
+Time for copyji is: 0.002144 seconds
+Running opt_argu_test_Os.out...
+Time for copyij is: 0.002350 seconds
+Time for copyji is: 0.071519 seconds
+Running opt_argu_test_Ofast.out...
+Time for copyij is: 0.000001 seconds
+Time for copyji is: 0.001878 seconds

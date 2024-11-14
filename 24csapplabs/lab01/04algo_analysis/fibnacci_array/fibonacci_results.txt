@@ -1,0 +1,24 @@
+Running fibonacci_O0.out...
+Time: 1:56.12, Memory: 768 KB
+Binary size: 15816 bytes
+
+Running fibonacci_O1.out...
+Time: 1:04.93, Memory: 768 KB
+Binary size: 15816 bytes
+
+Running fibonacci_O2.out...
+Time: 0:34.40, Memory: 768 KB
+Binary size: 15816 bytes
+
+Running fibonacci_O3.out...
+Time: 0:34.10, Memory: 1152 KB
+Binary size: 15816 bytes
+
+Running fibonacci_Os.out...
+Time: 0:48.27, Memory: 1152 KB
+Binary size: 15816 bytes
+
+Running fibonacci_Ofast.out...
+Time: 0:34.12, Memory: 1152 KB
+Binary size: 17320 bytes
+

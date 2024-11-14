@@ -1,0 +1,6 @@
+set $i=0
+while ($i<15)
+	call (int) func4($i, 0, 14)
+	set $i++
+end
+

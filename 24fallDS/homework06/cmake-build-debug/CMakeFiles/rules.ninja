@@ -99,7 +99,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = "D:\Apps\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SD:\learning-docs\24fallDS\homework06 -BD:\learning-docs\24fallDS\homework06\cmake-build-debug
+  command = "D:\Apps\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"D:\Ondrive_school\OneDrive - bupt.cn\learning-docs\24fallDS\homework06" -B"D:\Ondrive_school\OneDrive - bupt.cn\learning-docs\24fallDS\homework06\cmake-build-debug"
   description = Re-running CMake...
   generator = 1
 
