@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/Ondrive_school/OneDrive - bupt.cn/learning-docs/24csapplabs/bomb296/func4.c" "CMakeFiles/func4.dir/func4.c.obj" "gcc" "CMakeFiles/func4.dir/func4.c.obj.d"
+  "D:/Ondrive_school/OneDrive - bupt.cn/learning-docs/24csapplabs/bomb296/src/func4.c" "CMakeFiles/func4.dir/src/func4.c.obj" "gcc" "CMakeFiles/func4.dir/src/func4.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -128,29 +128,66 @@ func4/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\func4.dir\build.make CMakeFiles/func4.dir/build
 .PHONY : func4/fast
 
-func4.obj: func4.c.obj
-.PHONY : func4.obj
+#=============================================================================
+# Target rules for targets named phase5
+
+# Build rule for target.
+phase5: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 phase5
+.PHONY : phase5
+
+# fast build rule for target.
+phase5/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\phase5.dir\build.make CMakeFiles/phase5.dir/build
+.PHONY : phase5/fast
+
+src/func4.obj: src/func4.c.obj
+.PHONY : src/func4.obj
 
 # target to build an object file
-func4.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\func4.dir\build.make CMakeFiles/func4.dir/func4.c.obj
-.PHONY : func4.c.obj
+src/func4.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\func4.dir\build.make CMakeFiles/func4.dir/src/func4.c.obj
+.PHONY : src/func4.c.obj
 
-func4.i: func4.c.i
-.PHONY : func4.i
+src/func4.i: src/func4.c.i
+.PHONY : src/func4.i
 
 # target to preprocess a source file
-func4.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\func4.dir\build.make CMakeFiles/func4.dir/func4.c.i
-.PHONY : func4.c.i
+src/func4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\func4.dir\build.make CMakeFiles/func4.dir/src/func4.c.i
+.PHONY : src/func4.c.i
 
-func4.s: func4.c.s
-.PHONY : func4.s
+src/func4.s: src/func4.c.s
+.PHONY : src/func4.s
 
 # target to generate assembly for a file
-func4.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\func4.dir\build.make CMakeFiles/func4.dir/func4.c.s
-.PHONY : func4.c.s
+src/func4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\func4.dir\build.make CMakeFiles/func4.dir/src/func4.c.s
+.PHONY : src/func4.c.s
+
+src/phase5.obj: src/phase5.c.obj
+.PHONY : src/phase5.obj
+
+# target to build an object file
+src/phase5.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\phase5.dir\build.make CMakeFiles/phase5.dir/src/phase5.c.obj
+.PHONY : src/phase5.c.obj
+
+src/phase5.i: src/phase5.c.i
+.PHONY : src/phase5.i
+
+# target to preprocess a source file
+src/phase5.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\phase5.dir\build.make CMakeFiles/phase5.dir/src/phase5.c.i
+.PHONY : src/phase5.c.i
+
+src/phase5.s: src/phase5.c.s
+.PHONY : src/phase5.s
+
+# target to generate assembly for a file
+src/phase5.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\phase5.dir\build.make CMakeFiles/phase5.dir/src/phase5.c.s
+.PHONY : src/phase5.c.s
 
 # Help Target
 help:
@@ -161,9 +198,13 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... func4
-	@echo ... func4.obj
-	@echo ... func4.i
-	@echo ... func4.s
+	@echo ... phase5
+	@echo ... src/func4.obj
+	@echo ... src/func4.i
+	@echo ... src/func4.s
+	@echo ... src/phase5.obj
+	@echo ... src/phase5.i
+	@echo ... src/phase5.s
 .PHONY : help
 
 

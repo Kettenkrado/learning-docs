@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/func4.dir/func4.c.obj"
-  "CMakeFiles/func4.dir/func4.c.obj.d"
+  "CMakeFiles/func4.dir/src/func4.c.obj"
+  "CMakeFiles/func4.dir/src/func4.c.obj.d"
   "func4.exe"
   "func4.exe.manifest"
   "func4.pdb"

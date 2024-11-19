@@ -68,28 +68,28 @@ include CMakeFiles/func4.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/func4.dir/flags.make
 
-CMakeFiles/func4.dir/func4.c.obj: CMakeFiles/func4.dir/flags.make
-CMakeFiles/func4.dir/func4.c.obj: D:/Ondrive_school/OneDrive\ -\ bupt.cn/learning-docs/24csapplabs/bomb296/func4.c
-CMakeFiles/func4.dir/func4.c.obj: CMakeFiles/func4.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Ondrive_school\OneDrive - bupt.cn\learning-docs\24csapplabs\bomb296\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/func4.dir/func4.c.obj"
-	D:\Apps\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/func4.dir/func4.c.obj -MF CMakeFiles\func4.dir\func4.c.obj.d -o CMakeFiles\func4.dir\func4.c.obj -c "D:\Ondrive_school\OneDrive - bupt.cn\learning-docs\24csapplabs\bomb296\func4.c"
+CMakeFiles/func4.dir/src/func4.c.obj: CMakeFiles/func4.dir/flags.make
+CMakeFiles/func4.dir/src/func4.c.obj: D:/Ondrive_school/OneDrive\ -\ bupt.cn/learning-docs/24csapplabs/bomb296/src/func4.c
+CMakeFiles/func4.dir/src/func4.c.obj: CMakeFiles/func4.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="D:\Ondrive_school\OneDrive - bupt.cn\learning-docs\24csapplabs\bomb296\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/func4.dir/src/func4.c.obj"
+	D:\Apps\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/func4.dir/src/func4.c.obj -MF CMakeFiles\func4.dir\src\func4.c.obj.d -o CMakeFiles\func4.dir\src\func4.c.obj -c "D:\Ondrive_school\OneDrive - bupt.cn\learning-docs\24csapplabs\bomb296\src\func4.c"
 
-CMakeFiles/func4.dir/func4.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/func4.dir/func4.c.i"
-	D:\Apps\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\Ondrive_school\OneDrive - bupt.cn\learning-docs\24csapplabs\bomb296\func4.c" > CMakeFiles\func4.dir\func4.c.i
+CMakeFiles/func4.dir/src/func4.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/func4.dir/src/func4.c.i"
+	D:\Apps\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "D:\Ondrive_school\OneDrive - bupt.cn\learning-docs\24csapplabs\bomb296\src\func4.c" > CMakeFiles\func4.dir\src\func4.c.i
 
-CMakeFiles/func4.dir/func4.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/func4.dir/func4.c.s"
-	D:\Apps\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\Ondrive_school\OneDrive - bupt.cn\learning-docs\24csapplabs\bomb296\func4.c" -o CMakeFiles\func4.dir\func4.c.s
+CMakeFiles/func4.dir/src/func4.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/func4.dir/src/func4.c.s"
+	D:\Apps\CLION2~1.2\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "D:\Ondrive_school\OneDrive - bupt.cn\learning-docs\24csapplabs\bomb296\src\func4.c" -o CMakeFiles\func4.dir\src\func4.c.s
 
 # Object files for target func4
 func4_OBJECTS = \
-"CMakeFiles/func4.dir/func4.c.obj"
+"CMakeFiles/func4.dir/src/func4.c.obj"
 
 # External object files for target func4
 func4_EXTERNAL_OBJECTS =
 
-func4.exe: CMakeFiles/func4.dir/func4.c.obj
+func4.exe: CMakeFiles/func4.dir/src/func4.c.obj
 func4.exe: CMakeFiles/func4.dir/build.make
 func4.exe: CMakeFiles/func4.dir/linkLibs.rsp
 func4.exe: CMakeFiles/func4.dir/objects1.rsp
